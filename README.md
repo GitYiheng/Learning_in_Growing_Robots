@@ -6,6 +6,17 @@ This is a part of an ongoing project exploring the relation between varying stru
 
 Preliminary results can be found in [Learning in Growing Robots: Knowledge Transfer from Tadpole to Frog Robot](https://link.springer.com/chapter/10.1007/978-3-030-24741-6_42) 
 
+# Cite This Work
+
+@inproceedings{zhu2019learning,
+  title={Learning in Growing Robots: Knowledge Transfer from Tadpole to Frog Robot},
+  author={Zhu, Yiheng and Rossiter, Jonathan and Hauser, Helmut},
+  booktitle={Conference on Biomimetic and Biohybrid Systems},
+  pages={378--382},
+  year={2019},
+  organization={Springer}
+}
+
 # Installation
 
 This has only been tested in Windows 10.
@@ -98,7 +109,7 @@ You can test your training result now.
 
 5. Press the play button again to finish simulation.
 
-# Training from an Existing Model
+# Continue Training from an Existing Model
 
 You can train from an existing decision making policy.
 
@@ -116,4 +127,6 @@ You can train from an existing decision making policy.
 
 6. Normally, you would wait the training to finish by itself. To interrupt the training, you can press the play button in the Unity window again, or "ctrl+c" in the Anaconda Prompt.
 
+# License
 
+MIT License
