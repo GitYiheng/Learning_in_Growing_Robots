@@ -1,6 +1,6 @@
 # Learning in Growing Robots
 
-[![IMAGE ALT TEXT HERE](https://i.ytimg.com/vi/2-Y8vzH2t5g/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAJki_PH2sZS1smaZK2NxmtCCYnQA)](https://youtu.be/2-Y8vzH2t5g)
+[![Video_Clip_Thumbnail](images/video_clip_thumbnail.PNG)](https://youtu.be/2-Y8vzH2t5g)
 
 https://link.springer.com/chapter/10.1007/978-3-030-24741-6_42
 
