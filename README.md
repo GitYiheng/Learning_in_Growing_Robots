@@ -10,15 +10,17 @@ Preliminary results can be found in [Learning in Growing Robots: Knowledge Trans
 
 This is only tested in Windows 10.
 
-## Step 1 Install Unity
+## Step 1 Install Unity (Simulation Engine)
 
 Unity 2017.4.1 (version is important): https://unity3d.com/get-unity/download/archive
 
-## Step 2 Install Anaconda
+## Step 2 Install Anaconda (Python)
 
 Python 3.6.8 (Anaconda 4.5.12): https://www.anaconda.com/distribution/
 
-## Step 3 Install Tensorflow
+Please remember to add Anaconda to the `PATH` environment variable.
+
+## Step 3 Install Tensorflow (Neural Network)
 
 Open Anaconda Prompt and type
 
@@ -28,4 +30,15 @@ activate growvenv
 pip install tensorflow==1.7.1
 ```
 
-## Step 4 Install ML-Agents Toolkit
+## Step 4 Install ML-Agents Toolkit (Reinforcement Learning)
+
+Make sure the virtual environment `growvenv` is activated.
+
+```
+git clone https://github.com/Unity-Technologies/ml-agents.git
+cd ml-agents
+pip install -e .
+```
+
+# Simulation Setup
+
