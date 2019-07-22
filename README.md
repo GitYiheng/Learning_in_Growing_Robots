@@ -8,20 +8,15 @@ Preliminary results can be found in [Learning in Growing Robots: Knowledge Trans
 
 # Cite This Work
 
-@inproceedings{zhu2019learning,
+Zhu, Y., Rossiter, J. and Hauser, H., 2019, July. Learning in Growing Robots: Knowledge Transfer from Tadpole to Frog Robot. In Conference on Biomimetic and Biohybrid Systems (pp. 378-382). Springer, Cham.
 
-  title={Learning in Growing Robots: Knowledge Transfer from Tadpole to Frog Robot},
-  
-  author={Zhu, Yiheng and Rossiter, Jonathan and Hauser, Helmut},
-  
-  booktitle={Conference on Biomimetic and Biohybrid Systems},
-  
-  pages={378--382},
-  
-  year={2019},
-  
-  organization={Springer}
-  
+@inproceedings{zhu2019learning,
+    title={Learning in Growing Robots: Knowledge Transfer from Tadpole to Frog Robot},
+    author={Zhu, Yiheng and Rossiter, Jonathan and Hauser, Helmut},
+    booktitle={Conference on Biomimetic and Biohybrid Systems},
+    pages={378--382},
+    year={2019},
+    organization={Springer}
 }
 
 # Installation
