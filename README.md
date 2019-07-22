@@ -57,13 +57,15 @@ pip install -e .
 
 You can use the our froglet model or create your own.
 
-1. Open Unity and click "New". Name your project, select "3D" Template, and click "create project".
+1. Download our froglet model by typing `git clone https://github.com/GitYiheng/Learning_in_Growing_Robots.git` and you can find the ready-to-use "froglet.unitypackage" in "Learning_in_Growing_Robots/src/".
 
-2. Open "Edit==>Project Settings==>Player". Under "Other Settings==>Configuration==>Scripting Runtime Version", change "Stable (.NET 3.5 Equivalent)" to "Experimental (.NET 4.6 Equivalent)" and confirm "Restart".
+2. Open Unity and click "New". Name your project, select "3D" Template, and click "create project".
 
-3. Choose "Assets==>Import Package==>Custom Package..." then navigate and open "froglet.unitypackage". With all items selected, click "Import".
+3. Open "Edit==>Project Settings==>Player". Under "Other Settings==>Configuration==>Scripting Runtime Version", change "Stable (.NET 3.5 Equivalent)" to "Experimental (.NET 4.6 Equivalent)" and confirm "Restart".
 
-4. In "Project==>Assets==>Scenes", open "froglet". Now the simulation is ready to run.
+4. Choose "Assets==>Import Package==>Custom Package..." then navigate and open "../Learning_in_Growing_Robots/src/froglet.unitypackage". With all items selected, click "Import".
+
+5. In "Project==>Assets==>Scenes", open "froglet". Now the simulation is ready to run.
 
 # Model Verification in Player Mode
 
