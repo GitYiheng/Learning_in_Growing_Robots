@@ -6,14 +6,26 @@ This is a part of an ongoing project exploring the relation between varying stru
 
 Preliminary results can be found in [Learning in Growing Robots: Knowledge Transfer from Tadpole to Frog Robot](https://link.springer.com/chapter/10.1007/978-3-030-24741-6_42) 
 
-# Version
+# Installation
 
-Windows 10
+This is only tested in Windows 10.
 
-Unity 2017.4.1f1 (this version works)
+## Step 1 Install Unity
 
-Python 3.6.8 (Anaconda Distribution)
+Unity 2017.4.1 (version is important): https://unity3d.com/get-unity/download/archive
 
-Tensorflow 1.7.1
+## Step 2 Install Anaconda
 
-https://unity3d.com/unity/whatsnew/unity-2017.4.1
+Python 3.6.8 (Anaconda 4.5.12): https://www.anaconda.com/distribution/
+
+## Step 3 Install Tensorflow
+
+Open Anaconda Prompt and type
+
+```
+conda create -n growvenv python=3.6
+activate growvenv
+pip install tensorflow==1.7.1
+```
+
+## Step 4 Install ML-Agents Toolkit
