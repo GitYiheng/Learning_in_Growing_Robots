@@ -10,17 +10,17 @@ Preliminary results can be found in [Learning in Growing Robots: Knowledge Trans
 
 This is only tested in Windows 10.
 
-## Step 1 Install Unity (Simulation Engine)
+- Install Unity (Simulation Engine)
 
 Unity 2017.4.1 (version is important): https://unity3d.com/get-unity/download/archive
 
-## Step 2 Install Anaconda (Python)
+- Install Anaconda (Python)
 
 Python 3.6.8 (Anaconda 4.5.12): https://www.anaconda.com/distribution/
 
 Please remember to add Anaconda to the `PATH` environment variable.
 
-## Step 3 Install Tensorflow (Neural Network)
+- Install Tensorflow (Neural Network)
 
 Open Anaconda Prompt and type
 
@@ -30,7 +30,7 @@ activate growvenv
 pip install tensorflow==1.7.1
 ```
 
-## Step 4 Install ML-Agents Toolkit (Reinforcement Learning)
+- Install ML-Agents Toolkit (Reinforcement Learning)
 
 Make sure the virtual environment `growvenv` is activated.
 
@@ -41,4 +41,14 @@ pip install -e .
 ```
 
 # Simulation Setup
+
+- Open Unity and click "New". Name your project, select "3D" Template, and click "create project".
+
+- Open "Edit==>Project Settings==>Player". Under "Other Settings==>Configuration==>Scripting Runtime Version", change "Stable (.NET 3.5 Equivalent)" to "Experimental (.NET 4.6 Equivalent)" and confirm "Restart".
+
+- Choose "Assets==>Import Package==>Custom Package..." then navigate and open "froglet.unitypackage". With all items selected, click "Import".
+
+- In "Project==>Assets==>Scenes", open "froglet".
+
+Now the simulation is ready to run.
 
