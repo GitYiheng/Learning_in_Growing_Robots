@@ -66,7 +66,9 @@ You can modify model parameters until everything is right for you.
 
 In "Hierarchy==>froglet==>Head", you can change model parameters in "Inspector==>Tadpole Agent (Script)". Or you can change model parameters in code by opening "Project==>Assets==>Scripts==>TadpoleAgent.cs".
 
-# Training
+# Training from Scratch
+
+You can train a decision making policy from scratch.
 
 1. Choose "Hierarchy==>froglet==>Academy". In "Inspector==>Tadpole Academy (Script)==>Broadcast Hub==>Brain", tick the "control" box.
 
@@ -78,7 +80,40 @@ In "Hierarchy==>froglet==>Head", you can change model parameters in "Inspector==
 
 5. Start training by typing `mlagents-learn Config\config.yaml --run-id=tadpole_learn_id01 --keep-checkpoints=10000 --seed=1 --train`. After seeing the Unity icon and training information, press the play button in the Unity window.
 
-To end training, you can press the play button in the Unity window again, or "ctrl+c" in the Anaconda Prompt.
+6. Normally, you would wait the training to finish by itself. To interrupt the training, you can press the play button in the Unity window again, or "ctrl+c" in the Anaconda Prompt.
 
-In "Project==>Assets==>Config", you can change the training parameters in "config.yaml".
+In "Project==>Assets==>Config", you can change the training parameters in "config.yaml". If you are familiar with Tensorflow, you can create your customized network structure in the "create_cc_actor_critic" function in "ml-agents/ml-agents/trainers/models.py".
+
+# Testing
+
+You can test your training result now.
+
+1. Choose "Hierarchy==>froglet==>Academy". In "Inspector==>Tadpole Academy (Script)==>Broadcast Hub==>Brain", untick the "control" box.
+
+2. Choose "Hierarchy==>froglet==>Head". In "Inspector==>Tadpole Agent (Script)==>Brain", click the dartboard symbol and select "TadpoleBrain".
+
+3. Choose "Project==>Assets==>Brains", put a copy of "TadpoleBrain.nn" to "Inspector==>Model". "TadpoleBrain.nn" can be found in "project_name/Assets/models/tadpole_learn_id01/".
+
+4. Press the play button and the froglet should swim using the trained policy.
+
+5. Press the play button again to finish simulation.
+
+# Training from an Existing Model
+
+You can train from an existing decision making policy.
+
+1. Choose "Hierarchy==>froglet==>Academy". In "Inspector==>Tadpole Academy (Script)==>Broadcast Hub==>Brain", tick the "control" box.
+
+2. Choose "Hierarchy==>froglet==>Head". In "Inspector==>Tadpole Agent (Script)==>Brain", click the dartboard symbol and select "TadpoleBrain".
+
+3. Open an Anaconda Prompt and navigate to the "Assets" folder in your project directory.
+
+4. Activate the virtual environment by typing `activate growvenv`.
+
+5. In "Project==>Assets==>Config", you can change the "max_steps" to a larger number in "config.yaml".
+
+6. Continue training by typing `mlagents-learn Config\config.yaml --run-id=tadpole_learn_id01 --keep-checkpoints=10000 --seed=1 --load --train`. After seeing the Unity icon and training information, press the play button in the Unity window.
+
+6. Normally, you would wait the training to finish by itself. To interrupt the training, you can press the play button in the Unity window again, or "ctrl+c" in the Anaconda Prompt.
+
 
